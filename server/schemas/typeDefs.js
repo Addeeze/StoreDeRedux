@@ -59,5 +59,3 @@ const typeDefs = gql`
 
 module.exports = typeDefs;
 
-
-//https://github.com/Addeeze?tab=repositories

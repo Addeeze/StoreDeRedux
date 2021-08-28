@@ -32,5 +32,3 @@ module.exports = {
   },
 };
 
-
-//https://github.com/Addeeze?tab=repositories

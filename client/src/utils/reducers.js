@@ -16,7 +16,7 @@ export const reducer = (state, action) => {
   switch (action.type) {
     // TODO: Add a comment describing the functionality of the UPDATE_PRODUCTS case
     // Your comment here
-    //updates products variable to append a product to the list
+    // updates the variable of products to add the product to that list.
     case UPDATE_PRODUCTS:
       return {
         ...state,
@@ -37,7 +37,7 @@ export const reducer = (state, action) => {
       };
     // TODO: Add a comment describing the functionality of the UPDATE_CART_QUANTITY case
     // Your comment here
-    //goes through the products in the cart and updates the quantity based on action.purchaseQuantity
+    // This goes through the products in cart and updates quantity
     case UPDATE_CART_QUANTITY:
       return {
         ...state,
@@ -52,7 +52,7 @@ export const reducer = (state, action) => {
 
     // TODO: Add a comment describing the functionality of the REMOVE_FROM_CART case
     // Your comment here
-    // go through state.cart.filter and return a new list and set state.cart equal to that new list of products
+    // This goes through the state cart filter and returns a list of state carts equal to the list of added new products.
     case REMOVE_FROM_CART:
       let newState = state.cart.filter((product) => {
         return product._id !== action._id;
@@ -91,7 +91,7 @@ export const reducer = (state, action) => {
 
     // TODO: Add a comment describing what the default case is for
     // Your comment here
-    //if the action doesn't match any of the cases, just return state
+    //If the user action does not match any of the added cases, it will return the default state.
     default:
       return state;
   }

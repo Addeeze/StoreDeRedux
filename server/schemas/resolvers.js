@@ -143,5 +143,3 @@ const resolvers = {
 module.exports = resolvers;
 
 
-
-//https://github.com/Addeeze?tab=repositories
